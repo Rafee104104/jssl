@@ -1,0 +1,63 @@
+<?php 
+
+session_start();
+
+ob_start();
+
+
+
+require_once "../../../assets/support/inc.login.php";
+
+
+
+$_GET['module_id']=6;
+
+$module_name="MIS Management";
+
+if(isset($_POST['ibssignin']))
+
+{
+
+	$passward 	= $_POST['pass'];
+
+	$uid  		= $_POST['uid'];
+
+	$cid  		= $_POST['cid'];
+
+if(check_for_panel($cid,$uid,$passward,1)){
+
+header("Location:../inventory/home.php");
+
+}
+
+}else session_destroy();
+
+
+
+
+
+
+
+if(isset($_POST['ibssignin']))
+
+{
+
+$msg="Invalid Login Information!!!";
+
+$type=0;
+
+}
+
+
+
+?>
+
+
+
+<?php 
+
+
+
+include '../../../assets/template/login_interface.php';
+
+?>

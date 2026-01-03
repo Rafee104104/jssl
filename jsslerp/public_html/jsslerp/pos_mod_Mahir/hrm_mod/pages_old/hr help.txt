@@ -1,0 +1,4 @@
+1. month option adjust
+2. hrm_mod/pages/payroll
+mon days and friday setup.
+

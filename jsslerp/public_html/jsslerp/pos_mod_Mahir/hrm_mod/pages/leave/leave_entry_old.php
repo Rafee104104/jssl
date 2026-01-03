@@ -1,0 +1,1183 @@
+<?php
+
+require_once "../../../assets/template/layout.top.php";
+
+do_calander('#s_date');
+
+do_calander('#e_date');
+
+$head='<link href="../../css/report_selection.css" type="text/css" rel="stylesheet"/>';
+
+if($_SESSION['employee_selected']>0)
+
+$emp = find_all_field('personnel_basic_info','concat(PBI_NAME,"-",PBI_ID)','PBI_ID='.$_POST['employee_selected']);
+do_datatable('grp');
+// ::::: Edit This Section ::::: 
+
+$title='Leave Information';			// Page Name and Page Title
+
+$page="leave_entry.php";		// PHP File Name
+
+$input_page="leave_entry_input.php";
+
+$root='leave';
+
+
+
+$table='hrm_leave_info';
+
+$unique='id';
+
+$shown='s_date';
+
+
+
+// ::::: End Edit Section :::::
+
+
+
+$crud      =new crud($table);
+
+if(prevent_multi_submit()){
+
+if(isset($_POST[$shown]))
+
+{
+
+$$unique = $_POST[$unique];
+
+$_POST['entry_at']=date('Y-m-d H:i:s');
+
+$_POST['leave_status']='GRANTED';
+
+$s_date= strtotime($_REQUEST['s_date']);
+
+$e_date= strtotime($_REQUEST['e_date']);
+
+$_POST['leave_apply_date'] = date('Y-m-d');
+
+$old_leave = find_a_field('hrm_att_summary','leave_id',' att_date between "'.$_REQUEST['s_date'].'" and  "'.$_REQUEST['e_date'].'" and  emp_id="'.$_SESSION['employee_selected'].'" and leave_id>0');
+
+
+
+if($old_leave == 0)
+
+{
+
+
+
+$crud->insert();
+
+$_GET['leave_id'] =  mysql_insert_id();
+
+$full_leave = find_all_field('hrm_leave_info','','id='.$_GET['leave_id']);
+
+
+
+
+
+
+
+for($i=$s_date; $i<=$e_date; $i+=86400){
+
+if($full_leave->half_or_full=="half")
+
+$leave_duration = '0.5';
+
+else
+
+$leave_duration = '1.0';
+
+
+
+$att_date=date('Y-m-d',$i);
+
+$sql="select id from hrm_att_summary where emp_id='".$_POST['PBI_ID']."' and att_date='".$att_date."'";
+
+$query=mysql_query($sql);
+
+$num_rows=mysql_num_rows($query);
+
+$data=mysql_fetch_object($query);
+
+	if($num_rows>0){
+
+	$up_query="update hrm_att_summary set leave_id='".$full_leave->id."', leave_type='".$full_leave->type."', leave_reason='".$full_leave->reason."',leave_duration='".$leave_duration."', leave_approved_by='".$_SESSION['user']['id']."', leave_entry_at='".$full_leave->entry_at."', leave_entry_by='".$full_leave->PBI_ID."' where id=".$data->id;
+
+	mysql_query($up_query);
+
+	}else{
+
+ $ins_query="INSERT INTO hrm_att_summary( att_date, emp_id, leave_id, leave_type, leave_reason, leave_duration,leave_approved_by, leave_entry_at, leave_entry_by) VALUES ('".$att_date."','".$full_leave->PBI_ID."', '".$full_leave->id."', '".$full_leave->type."', '".$full_leave->reason."','".$leave_duration."', '".$_SESSION['user']['id']."', '".$full_leave->entry_at."', '".$full_leave->PBI_ID."')";
+
+	mysql_query($ins_query);
+
+	}
+
+}
+
+}
+
+else echo $msggg= "<h2 style='color:#FF0000'>You Can't Add Duplicate Leave</h2>";;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+?>
+<!--<script type="text/javascript"> function DoNav(lk){
+
+var win = window.open('leave_entry_input.php?id='+lk);
+
+  win.focus();
+
+}</script>-->
+<script type="text/javascript"> function DoNav(lk){
+
+	return GB_show('ggg', '../../hrm_mod/pages/leave/leave_entry_input.php?id='+lk,600,940)
+
+	}</script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+
+  $("#e_date").change(function (){
+
+     var from_leave = $("#s_date").datepicker('getDate');
+
+     var to_leave = $("#e_date").datepicker('getDate');
+
+    var days   = ((to_leave - from_leave)/1000/60/60/24)+1;
+
+
+
+	if(days>0&&days<100){
+
+	$("#total_days").val(days);}
+
+  });
+
+      $("#s_date").change(function (){
+
+     var from_leave = $("#s_date").datepicker('getDate');
+
+     var to_leave = $("#e_date").datepicker('getDate');
+
+    var days   = ((to_leave - from_leave)/1000/60/60/24)+1;
+
+	if(days>0&&days<100){
+
+	$("#total_days").val(days);}
+
+  });
+
+    
+
+  
+
+});
+
+ 
+
+</script>
+<!--<style type="text/css">
+
+
+
+.style1 {font-size: 24px}
+
+.style2 {
+
+	color: #FFFFFF;
+
+	font-size: 24px;
+
+	font-weight: bold;
+
+}
+
+
+
+</style>-->
+
+
+
+<form action="" method="post" enctype="multipart/form-data">
+
+    <? include('../../common/title_bar.php');?>
+
+
+    <div class="d-flex justify-content-center">
+        <div class="n-form1 fo-width pt-0">
+            <h4 class="text-center  bg-titel bold pt-2 pb-2">    Leave Information Entry     </h4>
+            <div class="container-fluid pt-3">
+                <div class="row m-0 p-0">
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 ">
+
+                        <div class="form-group row m-0 mb-1 pl-3 pr-3">
+                            <label for="group_for" class="col-sm-4 col-md-4 col-lg-4 col-xl-4 m-0 p-0 d-flex justify-content-end align-items-center pr-1 bg-form-titel-text"> Employee Name </label>
+                            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 p-0 pr-2">
+                                <?=$emp->PBI_NAME.' : '.$emp->PBI_ID;?>
+                                <input name="PBI_ID"  type="hidden" id="PBI_ID" size="10" onblur="" tabindex="1"  required value="<?=$_SESSION['employee_selected']?>" readonly="readonly" />
+                            </div>
+                        </div>
+
+                        <div class="form-group row m-0 mb-1 pl-3 pr-3">
+                            <label for="group_for" class="col-sm-4 col-md-4 col-lg-4 col-xl-4 m-0 p-0 d-flex justify-content-end align-items-center pr-1 bg-form-titel-text"> Start Date :</label>
+                            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 p-0 pr-2">
+                                <input type="text" name="s_date" id="s_date"   class="form-control"/>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group row m-0 mb-1 pl-3 pr-3">
+                            <label for="group_for" class="col-sm-4 col-md-4 col-lg-4 col-xl-4 m-0 p-0 d-flex justify-content-end align-items-center pr-1 bg-form-titel-text">Total Days :</label>
+                            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 p-0 pr-2">
+                                <input type="text" name="total_days" id="total_days" readonly="" required="required"  class="form-control"/>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group row m-0 mb-1 pl-3 pr-3">
+                            <label for="group_for" class="col-sm-4 col-md-4 col-lg-4 col-xl-4 m-0 p-0 d-flex justify-content-end align-items-center pr-1 bg-form-titel-text">Paid Status :</label>
+                            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 p-0 pr-2">
+                                <select name="paid_status" id="paid_status" class="form-control">
+                                    <option>Paid</option>
+                                    <option>Unpaid</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+
+                        <div class="form-group row m-0 mb-1 pl-3 pr-3">
+                            <label for="group_for" class="col-sm-4 col-md-4 col-lg-4 col-xl-4 m-0 p-0 d-flex justify-content-end align-items-center pr-1 bg-form-titel-text">Type :</label>
+                            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 p-0 pr-2">
+                                <select name="type" id="type" required class="form-control">
+                                    <option value="Annual Leave">Annual Leave</option>
+                                    <option value="LWP (Leave Without Pay)">LWP (Leave Without Pay)</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group row m-0 mb-1 pl-3 pr-3">
+                            <label for="group_for" class="col-sm-4 col-md-4 col-lg-4 col-xl-4 m-0 p-0 d-flex justify-content-end align-items-center pr-1 bg-form-titel-text">End Date :</label>
+                            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 p-0 pr-2">
+                                <input type="text" name="e_date" id="e_date"   class="form-control"/>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="form-group row m-0 mb-1 pl-3 pr-3">
+                            <label for="group_for" class="col-sm-4 col-md-4 col-lg-4 col-xl-4 m-0 p-0 d-flex justify-content-end align-items-center pr-1 bg-form-titel-text">Reason :</label>
+                            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 p-0 pr-2">
+                                <input name="reason" type="text" id="reason"  class="form-control"/>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="n-form-btn-class">
+                    <input name="search" type="submit" id="search" class="btn1 btn1-submit-input" value="SUBMIT" />
+					
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</form>
+
+<form action="" method="post">
+
+    <div class="container-fluid pt-5">
+
+
+        <? if($emp->PBI_DOC2<date('Y-m-d')){?>
+            <?
+
+            /*$d22=date("2019-12-31");
+
+            $d2 = new DateTime($d22);
+
+            $cdate = find_a_field('personnel_basic_info','PBI_DOC2','PBI_ID='.$_SESSION['employee_selected']);
+
+            if($cdate > date("2019-12-26") &&  $cdate !='0000-00-00'){
+
+            $string = $cdate;
+
+            $timestamp = strtotime($string);
+
+            $tdate = date("d", $timestamp);
+
+            $cd =new DateTime($cdate);
+
+            $interval = date_diff($cd, $d2);
+
+            if($tdate<16){
+
+            $total_leave=$interval->format('%m')*2.5+2.5;
+
+            //echo $total_leave;
+
+            }else{
+
+            $total_leave=$interval->format('%m')*2.5;
+
+            //echo $total_leave;
+
+            }}elseif($cdate < date("2019-12-26") &&  $cdate !='0000-00-00'){
+
+            $total_leave = 30; //echo $total_leave;
+
+            }elseif($cdate ='0000-00-00'){$total_leave=0;
+
+            //echo $total_leave;
+
+            }*/
+
+
+
+
+
+// Leave quota calculation 2019
+
+            $r_date = find_a_field('personnel_basic_info','JOB_STATUS_DATE','PBI_ID='.$_SESSION['employee_selected']);
+
+            if($r_date !='0000-00-00'){ $last_date =$r_date; }else{ $last_date = date("2019-12-25"); }
+
+
+
+            $last_date2 = strtotime($last_date);
+
+            $ccdate = $cdate = find_a_field('personnel_basic_info','PBI_DOC2','PBI_ID='.$_SESSION['employee_selected']);
+
+            if($cdate < $last_date &&  $cdate !='0000-00-00'){
+
+
+
+                $ww = date("2019")-1;
+
+                $start_date = date(''.$ww.'-12-26');
+
+                if($start_date>$cdate){ $cdate = $start_date;}
+
+                $doc2 = strtotime($cdate);
+
+                $datediff = $last_date2 - $doc2;
+
+                $total_d= round($datediff / (60 * 60 * 24)+1);
+
+                $total_leave= number_format(((30*$total_d)/365),1);
+
+                if($total_leave>30){ $total_leave=30;}
+
+                elseif($total_leave<0){ $total_leave=0;}
+
+            } else {
+
+                $total_leave = 0;
+
+            }
+
+// END leave consume calculation
+
+
+
+
+
+            ?>
+            <table  border="0" class="table1  table-striped table-bordered table-hover table-sm" align="center">
+                <thead>
+                <tr class="table-info">
+                    <th colspan="3" align="center"><div align="left">Confirmation Date:
+                            <?=$ccdate?>
+                        </div></th>
+                    <th align="center">Total working day
+                        <?=$total_d?></th>
+                    <th align="center">Start Date
+                        <?=$cdate?>
+                        . End date
+                        <?=$last_date?>
+                    </th>
+                </tr>
+                <tr class="table-warning">
+                    <th align="center">Year</th>
+                    <th align="center">Leave Quota</th>
+                    <th align="center">Type</th>
+                    <th align="center">Leave Consumed</th>
+                    <th align="center">Leave Available</th>
+                </tr>
+
+                </thead>
+
+                <tbody class="tbody1">
+
+
+                <tr>
+                    <td align="center">2019</td>
+                    <td align="center"><?=$total_leave?></td>
+                    <td align="center">Salary Sheet</td>
+                    <td align="center"><?=$leave_c = find_a_field('salary_attendence','sum(lv)','PBI_ID='.$_SESSION['employee_selected'].' and year=2019');
+
+                        // and year="'.date(Y).'"
+
+                        ?></td>
+                    <td align="center"><?=($total_leave-$leave_c)?></td>
+                </tr>
+                <tr>
+                    <td align="center">&nbsp;</td>
+                    <td align="center">&nbsp;</td>
+                    <td align="center">Leave Table </td>
+                    <td align="center"><?=$leave_c1 = find_a_field('hrm_leave_info','sum(total_days)','type not in("LWP (Leave Without Pay)","Compensatory Off")
+
+and leave_status NOT IN("Dept. Head Unapproved","Incharge Unapproved")
+
+and s_date >= "2018-12-26" and s_date <= "2019-12-25"
+
+and PBI_ID='.$_SESSION['employee_selected']);?></td>
+                    <td align="center"><?=($total_leave-$leave_c1)?></td>
+                </tr>
+                <?
+
+                // Leave quota calculation 2020
+
+                $job_location = $emp->JOB_LOCATION;
+
+                if($job_location==1 || $job_location==88|| $job_location==68){ $yearly_leave=15;}else{ $yearly_leave=30; }
+
+
+
+                $r_date = find_a_field('personnel_basic_info','JOB_STATUS_DATE','PBI_ID='.$_SESSION['employee_selected']);
+
+                if($r_date !='0000-00-00'){ $last_date =$r_date; }else{ $last_date = date("2020-12-25"); }
+
+
+
+                $last_date2 = strtotime($last_date);
+
+                $cdate = find_a_field('personnel_basic_info','PBI_DOC2','PBI_ID='.$_SESSION['employee_selected']);
+
+                if($cdate < $last_date &&  $cdate !='0000-00-00'){
+
+
+
+                    $ww = date("2020")-1;
+
+                    $start_date = date(''.$ww.'-12-26');
+
+                    if($start_date>$cdate){ $cdate = $start_date;}
+
+                    $doc2 = strtotime($cdate);
+
+                    $datediff = $last_date2 - $doc2;
+
+                    $total_d= round($datediff / (60 * 60 * 24)+1);
+
+                    $total_leave= number_format((($yearly_leave*$total_d)/365),1);
+
+                    if($total_leave>$yearly_leave){ $total_leave=$yearly_leave;}
+
+                    elseif($total_leave<0){ $total_leave=0;}
+
+                } else {
+
+                    $total_leave = 0;
+
+                }
+
+                // leave consume calculation
+
+                ?>
+                <tr>
+                    <td align="center">&nbsp;</td>
+                    <td align="center">&nbsp;</td>
+                    <td align="center">&nbsp;</td>
+                    <td align="center">&nbsp;</td>
+                    <td align="center">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="center">2020</td>
+                    <td align="center"><?=$total_leave?></td>
+                    <td align="center">Salary Sheet</td>
+                    <td align="center"><?=$leave_c = find_a_field('salary_attendence','sum(lv)','PBI_ID='.$_SESSION['employee_selected'].' and year=2020');
+
+                        // and year="'.date(Y).'"
+
+                        ?></td>
+                    <td align="center"><?=($total_leave-$leave_c)?></td>
+                </tr>
+                <tr>
+                    <td align="center">&nbsp;</td>
+                    <td align="center">&nbsp;</td>
+                    <td align="center">Leave Table </td>
+                    <td align="center"><?=$leave_c1 = find_a_field('hrm_leave_info','sum(total_days)','type not in("LWP (Leave Without Pay)","Compensatory Off")
+
+and leave_status NOT IN("Dept. Head Unapproved","Incharge Unapproved")
+
+and s_date >= "2019-12-26" and s_date <= "2020-12-25"
+
+and PBI_ID='.$_SESSION['employee_selected']);?></td>
+                    <td align="center"><?=($total_leave-$leave_c1)?></td>
+                </tr>
+                <tr>
+                    <td align="center">&nbsp;</td>
+                    <td align="center">&nbsp;</td>
+                    <td align="center">&nbsp;</td>
+                    <td align="center">&nbsp;</td>
+                    <td align="center">&nbsp;</td>
+                </tr>
+                <?
+
+                // Leave quota calculation 2021
+
+                $job_location = $emp->JOB_LOCATION;
+
+                //if($job_location==1 || $job_location==88|| $job_location==68){ $yearly_leave=15;}else{ $yearly_leave=30; }
+
+                $yearly_leave=30;
+
+
+
+                $r_date = find_a_field('personnel_basic_info','JOB_STATUS_DATE','PBI_ID='.$_SESSION['employee_selected']);
+
+                if($r_date !='0000-00-00'){ $last_date =$r_date; }else{ $last_date = date("2021-12-25"); }
+
+
+
+                $last_date2 = strtotime($last_date);
+
+                $cdate = find_a_field('personnel_basic_info','PBI_DOC2','PBI_ID='.$_SESSION['employee_selected']);
+
+                if($cdate < $last_date &&  $cdate !='0000-00-00'){
+
+
+
+                    $ww = date("2021")-1;
+
+                    $start_date = date(''.$ww.'-12-26');
+
+                    if($start_date>$cdate){ $cdate = $start_date;}
+
+                    $doc2 = strtotime($cdate);
+
+                    $datediff = $last_date2 - $doc2;
+
+                    $total_d= round($datediff / (60 * 60 * 24)+1);
+
+                    $total_leave= number_format((($yearly_leave*$total_d)/365),1);
+
+                    if($total_leave>$yearly_leave){ $total_leave=$yearly_leave;}
+
+                    elseif($total_leave<0){ $total_leave=0;}
+
+                } else {
+
+                    $total_leave = 0;
+
+                }
+
+                // leave consume calculation
+
+                ?>
+                <tr>
+                    <td align="center">2021</td>
+                    <td align="center"><?=$total_leave?></td>
+                    <td align="center">Salary Sheet</td>
+                    <td align="center"><?=$leave_c = find_a_field('salary_attendence','sum(lv)','PBI_ID='.$_SESSION['employee_selected'].' and year=2021');
+
+                        // and year="'.date(Y).'"
+
+                        ?></td>
+                    <td align="center"><?=($total_leave-$leave_c)?></td>
+                </tr>
+                <tr>
+                    <td align="center">&nbsp;</td>
+                    <td align="center">&nbsp;</td>
+                    <td align="center">Leave Table </td>
+                    <td align="center"><?=$leave_c1 = find_a_field('hrm_leave_info','sum(total_days)','type not in("LWP (Leave Without Pay)","Compensatory Off")
+
+and leave_status NOT IN("Dept. Head Unapproved","Incharge Unapproved")
+
+and s_date >= "2020-12-26" and s_date <= "2021-12-25"
+
+and PBI_ID='.$_SESSION['employee_selected']);?></td>
+                    <td align="center"><?=($total_leave-$leave_c1)?></td>
+                </tr>
+
+                </tbody>
+
+            </table>
+        <? }?>
+        <br />
+
+
+
+
+
+
+
+
+
+            <?
+            if($_SESSION['employee_selected']>0){
+                $res = "select o.id,a.PBI_ID,a.PBI_NAME,o.type,o.leave_status,o.s_date as start_date, o.e_date as end_date,o.half_or_full as slot,o.total_days
+
+from personnel_basic_info a,hrm_leave_info o
+
+where
+
+a.PBI_ID=o.PBI_ID
+
+and o.s_date > '2017-12-25'
+
+and a.PBI_ID='".$_SESSION['employee_selected']."'
+
+
+
+order by o.id desc";
+
+
+// and o.leave_status NOT IN('Dept. Head Unapproved','Incharge Unapproved')
+
+                echo link_report1($res,$link);
+            }?>
+
+
+
+
+
+
+
+
+
+    </div>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+<?php/*>
+<div class="oe_view_manager oe_view_manager_current">
+  <form action="" method="post" enctype="multipart/form-data">
+    <? include('../../common/title_bar.php');?>
+  </form>
+  <form action=""  method="post">
+    <div class="oe_view_manager_body">
+      <div  class="oe_view_manager_view_list"></div>
+      <div class="oe_view_manager_view_form">
+        <div style="opacity: 1;" class="oe_formview oe_view oe_form_editable">
+          <div class="oe_form_buttons"></div>
+          <div class="oe_form_sidebar"></div>
+          <div class="oe_form_pager"></div>
+          <div class="oe_form_container">
+            <div class="oe_form">
+              <div class="">
+                <div class="oe_form_sheetbg">
+                  <div class="oe_form_sheet oe_form_sheet_width">
+                    <div  class="oe_view_manager_view_list">
+                      <div  class="oe_list oe_view">
+                        <table   align="center" class="table table-bordered table-sm">
+                          <tr>
+                            <td  colspan="4" bgcolor="#00FF00"><div align="center">Leave Information  Entry </div></td>
+                          </tr>
+                          <tr>
+                            <td width="20%" ><div align="right">Employee Name : </div></td>
+                            <td><?=$emp->PBI_NAME.' - '.$emp->PBI_ID;?>
+                              <input name="PBI_ID"  type="hidden" id="PBI_ID" size="10" onblur="" tabindex="1" style="width:400px;" required value="<?=$_SESSION['employee_selected']?>" readonly="readonly" /></td>
+							  
+							   <td align="right" ><div align="right"> Type : </div></td>
+                            <td ><select name="type" id="type" required class="form-control">
+                                <option value="Annual Leave">Annual Leave</option>
+                                <option value="LWP (Leave Without Pay)">LWP (Leave Without Pay)</option>
+                              </select>
+                            </td>
+							
+                          </tr>
+                          
+                          <tr>
+                            <td align="right"><div align="right"> Start Date :</div></td>
+                            <td><input type="text" name="s_date" id="s_date" style="width:100px;"  class="form-control"/></td>
+							
+							<td align="right" ><div align="right"> End Date :</div></td>
+                            <td ><input type="text" name="e_date" id="e_date" style="width:100px;"  class="form-control"/></td>
+							
+                          </tr>
+                          
+                          <tr>
+                            <td><div align="right">Total  Days : </div></td>
+                            <td><input type="text" name="total_days" id="total_days" style="width:100px;" readonly="" required="required"  class="form-control"/></td>
+							
+							 <td ><div align="right">Reason :</div></td>
+                            <td ><label>
+                              <input name="reason" type="text" id="reason"  class="form-control"/>
+                              </label></td>
+                          </tr>
+                          
+                          <tr>
+                            <td><div align="right">Paid Status : </div></td>
+                            <td><label>
+                              <select name="paid_status" id="paid_status" class="form-control">
+                                <option>Paid</option>
+                                <option>Unpaid</option>
+                              </select>
+                              </label></td>
+							  
+							  <td colspan="2"><div align="center">
+                                <input name="search" type="submit" id="search" class="btn1 btn1-bg-submit" value="SUBMIT" />
+                              </div></td>
+							  
+                          </tr>
+                          
+                        </table>
+
+
+                        <? if($emp->PBI_DOC2<date('Y-m-d')){?>
+                        <?
+
+//$/d22=date("2019-12-31");
+
+$d2 = new DateTime($d22);
+
+$cdate = find_a_field('personnel_basic_info','PBI_DOC2','PBI_ID='.$_SESSION['employee_selected']);
+
+if($cdate > date("2019-12-26") &&  $cdate !='0000-00-00'){
+
+$string = $cdate;
+
+$timestamp = strtotime($string);
+
+$tdate = date("d", $timestamp);
+
+$cd =new DateTime($cdate);
+
+$interval = date_diff($cd, $d2);
+
+if($tdate<16){
+
+$total_leave=$interval->format('%m')*2.5+2.5;
+
+//echo $total_leave;
+
+}else{
+
+$total_leave=$interval->format('%m')*2.5;
+
+//echo $total_leave;
+
+}}elseif($cdate < date("2019-12-26") &&  $cdate !='0000-00-00'){
+
+$total_leave = 30; //echo $total_leave;
+
+}elseif($cdate ='0000-00-00'){$total_leave=0; 
+
+//echo $total_leave;
+
+/}//
+
+
+
+
+
+// Leave quota calculation 2019
+
+$r_date = find_a_field('personnel_basic_info','JOB_STATUS_DATE','PBI_ID='.$_SESSION['employee_selected']);
+
+if($r_date !='0000-00-00'){ $last_date =$r_date; }else{ $last_date = date("2019-12-25"); }
+
+
+
+$last_date2 = strtotime($last_date);
+
+$ccdate = $cdate = find_a_field('personnel_basic_info','PBI_DOC2','PBI_ID='.$_SESSION['employee_selected']);
+
+if($cdate < $last_date &&  $cdate !='0000-00-00'){
+
+
+
+$ww = date("2019")-1;
+
+$start_date = date(''.$ww.'-12-26');
+
+if($start_date>$cdate){ $cdate = $start_date;}
+
+$doc2 = strtotime($cdate);
+
+$datediff = $last_date2 - $doc2;
+
+$total_d= round($datediff / (60 * 60 * 24)+1);
+
+$total_leave= number_format(((30*$total_d)/365),1);
+
+if($total_leave>30){ $total_leave=30;}
+
+elseif($total_leave<0){ $total_leave=0;}
+
+} else {
+
+$total_leave = 0;
+
+}
+
+// END leave consume calculation
+
+
+
+
+
+?>
+                        <table  border="0" class="table1  table-striped table-bordered table-hover table-sm" align="center">
+						<thead>
+						   <tr class="table-info">
+                            <th colspan="3" align="center"><div align="left">Confirmation Date:
+                                <?=$ccdate?>
+                              </div></th>
+                            <th align="center">Total working day
+                              <?=$total_d?></th>
+                            <th align="center">Start Date
+                              <?=$cdate?>
+                              . End date
+                              <?=$last_date?>
+                            </th>
+                          </tr>
+                          <tr class="table-warning">
+                            <th align="center">Year</th>
+                            <th align="center">Leave Quota</th>
+                            <th align="center">Type</th>
+                            <th align="center">Leave Consumed</th>
+                            <th align="center">Leave Available</th>
+                          </tr>
+						
+						</thead>
+						
+						<tbody class="tbody1">
+						
+						
+                          <tr>
+                            <td align="center">2019</td>
+                            <td align="center"><?=$total_leave?></td>
+                            <td align="center">Salary Sheet</td>
+                            <td align="center"><?=$leave_c = find_a_field('salary_attendence','sum(lv)','PBI_ID='.$_SESSION['employee_selected'].' and year=2019');
+
+// and year="'.date(Y).'"
+
+?></td>
+                            <td align="center"><?=($total_leave-$leave_c)?></td>
+                          </tr>
+                          <tr>
+                            <td align="center">&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td align="center">Leave Table </td>
+                            <td align="center"><?=$leave_c1 = find_a_field('hrm_leave_info','sum(total_days)','type not in("LWP (Leave Without Pay)","Compensatory Off") 
+
+and leave_status NOT IN("Dept. Head Unapproved","Incharge Unapproved")
+
+and s_date >= "2018-12-26" and s_date <= "2019-12-25"
+
+and PBI_ID='.$_SESSION['employee_selected']);?></td>
+                            <td align="center"><?=($total_leave-$leave_c1)?></td>
+                          </tr>
+                          <?
+
+// Leave quota calculation 2020
+
+$job_location = $emp->JOB_LOCATION;
+
+if($job_location==1 || $job_location==88|| $job_location==68){ $yearly_leave=15;}else{ $yearly_leave=30; }
+
+
+
+$r_date = find_a_field('personnel_basic_info','JOB_STATUS_DATE','PBI_ID='.$_SESSION['employee_selected']);
+
+if($r_date !='0000-00-00'){ $last_date =$r_date; }else{ $last_date = date("2020-12-25"); }
+
+
+
+$last_date2 = strtotime($last_date);
+
+$cdate = find_a_field('personnel_basic_info','PBI_DOC2','PBI_ID='.$_SESSION['employee_selected']);
+
+if($cdate < $last_date &&  $cdate !='0000-00-00'){
+
+
+
+$ww = date("2020")-1;
+
+$start_date = date(''.$ww.'-12-26');
+
+if($start_date>$cdate){ $cdate = $start_date;}
+
+$doc2 = strtotime($cdate);
+
+$datediff = $last_date2 - $doc2;
+
+$total_d= round($datediff / (60 * 60 * 24)+1);
+
+$total_leave= number_format((($yearly_leave*$total_d)/365),1);
+
+if($total_leave>$yearly_leave){ $total_leave=$yearly_leave;}
+
+elseif($total_leave<0){ $total_leave=0;}
+
+} else {
+
+$total_leave = 0;
+
+}
+
+// leave consume calculation
+
+?>
+                          <tr>
+                            <td align="center">&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td align="center">2020</td>
+                            <td align="center"><?=$total_leave?></td>
+                            <td align="center">Salary Sheet</td>
+                            <td align="center"><?=$leave_c = find_a_field('salary_attendence','sum(lv)','PBI_ID='.$_SESSION['employee_selected'].' and year=2020');
+
+// and year="'.date(Y).'"
+
+?></td>
+                            <td align="center"><?=($total_leave-$leave_c)?></td>
+                          </tr>
+                          <tr>
+                            <td align="center">&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td align="center">Leave Table </td>
+                            <td align="center"><?=$leave_c1 = find_a_field('hrm_leave_info','sum(total_days)','type not in("LWP (Leave Without Pay)","Compensatory Off") 
+
+and leave_status NOT IN("Dept. Head Unapproved","Incharge Unapproved")
+
+and s_date >= "2019-12-26" and s_date <= "2020-12-25"
+
+and PBI_ID='.$_SESSION['employee_selected']);?></td>
+                            <td align="center"><?=($total_leave-$leave_c1)?></td>
+                          </tr>
+                          <tr>
+                            <td align="center">&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                          </tr>
+                          <?
+
+// Leave quota calculation 2021
+
+$job_location = $emp->JOB_LOCATION;
+
+//if($job_location==1 || $job_location==88|| $job_location==68){ $yearly_leave=15;}else{ $yearly_leave=30; }
+
+$yearly_leave=30;
+
+
+
+$r_date = find_a_field('personnel_basic_info','JOB_STATUS_DATE','PBI_ID='.$_SESSION['employee_selected']);
+
+if($r_date !='0000-00-00'){ $last_date =$r_date; }else{ $last_date = date("2021-12-25"); }
+
+
+
+$last_date2 = strtotime($last_date);
+
+$cdate = find_a_field('personnel_basic_info','PBI_DOC2','PBI_ID='.$_SESSION['employee_selected']);
+
+if($cdate < $last_date &&  $cdate !='0000-00-00'){
+
+
+
+$ww = date("2021")-1;
+
+$start_date = date(''.$ww.'-12-26');
+
+if($start_date>$cdate){ $cdate = $start_date;}
+
+$doc2 = strtotime($cdate);
+
+$datediff = $last_date2 - $doc2;
+
+$total_d= round($datediff / (60 * 60 * 24)+1);
+
+$total_leave= number_format((($yearly_leave*$total_d)/365),1);
+
+if($total_leave>$yearly_leave){ $total_leave=$yearly_leave;}
+
+elseif($total_leave<0){ $total_leave=0;}
+
+} else {
+
+$total_leave = 0;
+
+}
+
+
+
+
+
+
+
+// leave consume calculation
+
+?>
+                          <tr>
+                            <td align="center">2021</td>
+                            <td align="center"><?=$total_leave?></td>
+                            <td align="center">Salary Sheet</td>
+                            <td align="center"><?=$leave_c = find_a_field('salary_attendence','sum(lv)','PBI_ID='.$_SESSION['employee_selected'].' and year=2021');
+
+// and year="'.date(Y).'"
+
+?></td>
+                            <td align="center"><?=($total_leave-$leave_c)?></td>
+                          </tr>
+                          <tr>
+                            <td align="center">&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td align="center">Leave Table </td>
+                            <td align="center"><?=$leave_c1 = find_a_field('hrm_leave_info','sum(total_days)','type not in("LWP (Leave Without Pay)","Compensatory Off") 
+
+and leave_status NOT IN("Dept. Head Unapproved","Incharge Unapproved")
+
+and s_date >= "2020-12-26" and s_date <= "2021-12-25"
+
+and PBI_ID='.$_SESSION['employee_selected']);?></td>
+                            <td align="center"><?=($total_leave-$leave_c1)?></td>
+                          </tr>
+						  
+						  
+						  
+						  
+						
+						
+						
+						
+						
+						
+						</tbody>
+											  
+                        </table>
+                        <? }?>
+                        <br />
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+                        <div style="text-align:center">
+                          <div class="oe_form_sheetbg">
+                            <div class="oe_form_sheet oe_form_sheet_width">
+                              <div class="oe_view_manager_view_list">
+                                <div class="oe_list oe_view">
+                                  <? 
+
+if($_SESSION['employee_selected']>0){
+
+$res = "select o.id,a.PBI_ID,a.PBI_NAME,o.type,o.leave_status,o.s_date as start_date, o.e_date as end_date,o.half_or_full as slot,o.total_days 
+
+from personnel_basic_info a,hrm_leave_info o 
+
+where 
+
+a.PBI_ID=o.PBI_ID 
+
+and o.s_date > '2017-12-25'
+
+and a.PBI_ID='".$_SESSION['employee_selected']."' 
+
+
+
+order by o.id desc";
+
+
+
+// and o.leave_status NOT IN('Dept. Head Unapproved','Incharge Unapproved')
+
+
+
+echo link_report1($res,$link);   
+
+
+}      
+
+ ?>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="oe_chatter">
+                  <div class="oe_followers oe_form_invisible">
+                    <div class="oe_follower_list"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<*/?>
+
+
+
+
+<?
+
+require_once "../../../assets/template/layout.bottom.php";
+
+?>

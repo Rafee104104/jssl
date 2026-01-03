@@ -1,0 +1,65 @@
+<? 
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
+session_start();
+require_once "../../../assets/support/inc.login.php";
+$cid = 'jssl';
+
+
+
+
+
+if(isset($_POST['ibssignin']))
+{
+
+	$passward 	= md5($_POST['pass']);
+	$uid  		= $_POST['uid'];
+	//$cid  		= $_POST['cid'];
+
+
+
+if(check_for_login($cid,$uid,$passward,1)){
+
+  //header("Location:index_varify.php");
+
+
+
+header("Location:../../../login/pages/main/home.php");
+exit;
+
+
+
+
+
+
+}else
+
+{
+
+session_destroy();
+
+$msg="Invalid Login Information!!!";
+
+}
+}
+
+
+ if($cid == 'robi' || $cid == 'mark' || $cid == 'mamun' || $cid == 'dailyrice'  || $cid == 'uniocean' || $cid == 'vcon'  || $cid == 'visiontouch' || $cid == 'visionfin' ){
+ include '../../../assets/template/login_interface1.php';
+ }
+ elseif($cid == 'rahimgroup'){
+  include '../../../assets/template/login_interface_rahimgroup.php';
+ }
+  elseif($cid == 'starline'){
+  include '../../../assets/template/login_interface_starline.php';
+ }
+   elseif($cid == 'radisson'){
+  include '../../../assets/template/login_interface_radisson.php';
+ }
+
+ else{
+ include '../../../assets/template/login_interface.php';
+ }
+
+?>

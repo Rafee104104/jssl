@@ -1,0 +1,229 @@
+[23-Dec-2025 04:53:12 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/jsslerp/public_html/jsslerp/assets/template/layout.top.php on line 3
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Undefined index: sr_loan_id in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 27
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Undefined variable: booking_number in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 186
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Undefined variable: sr_all in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 186
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Trying to get property of non-object in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 186
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Undefined variable: booking_number_eng in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 189
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Undefined variable: dealer_code_eng in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 205
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Undefined variable: booking_number_eng in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 226
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Undefined variable: loan_date in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 231
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Undefined variable: paid_date in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 256
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Undefined variable: sr_all in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 266
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Trying to get property of non-object in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 266
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Undefined variable: sr_all in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 276
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Trying to get property of non-object in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 276
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Undefined variable: sr_all in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 285
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Trying to get property of non-object in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 285
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Undefined variable: totalPaid in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 298
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Undefined variable: recdate in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 308
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Undefined variable: total_paid in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 317
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Undefined variable: total_days in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 327
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Undefined variable: interest_amt in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 336
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Undefined variable: total_amount in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 345
+[23-Dec-2025 10:53:12 Asia/Dhaka] PHP Notice:  Undefined variable: cash_ledger in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 359
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Use of undefined constant mod_id - assumed 'mod_id' in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 2
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined index: mod_id in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 2
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Use of undefined constant PROJECTS - assumed 'PROJECTS' in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 12
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: header_add in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 19
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: sb_count in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined offset: 37 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined offset: 39 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined offset: 44 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined offset: 51 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined offset: 796 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined offset: 798 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined offset: 850 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined offset: 922 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined offset: 975 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined offset: 1102 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined offset: 1103 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined offset: 1104 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined offset: 1105 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined offset: 1106 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined offset: 1111 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined offset: 42 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: add_button_bar in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 318
+[23-Dec-2025 04:53:17 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/jsslerp/public_html/jsslerp/assets/template/layout.top.php on line 3
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined index: sr_loan_id in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 27
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: booking_number in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 186
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: sr_all in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 186
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Trying to get property of non-object in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 186
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: booking_number_eng in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 189
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: dealer_code_eng in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 205
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: booking_number_eng in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 226
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: loan_date in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 231
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: paid_date in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 256
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: sr_all in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 266
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Trying to get property of non-object in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 266
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: sr_all in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 276
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Trying to get property of non-object in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 276
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: sr_all in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 285
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Trying to get property of non-object in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 285
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: totalPaid in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 298
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: recdate in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 308
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: total_paid in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 317
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: total_days in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 327
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: interest_amt in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 336
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: total_amount in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 345
+[23-Dec-2025 10:53:17 Asia/Dhaka] PHP Notice:  Undefined variable: cash_ledger in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 359
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Use of undefined constant mod_id - assumed 'mod_id' in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 2
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined index: mod_id in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 2
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Use of undefined constant PROJECTS - assumed 'PROJECTS' in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 12
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined variable: header_add in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 19
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined variable: sb_count in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined offset: 37 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined offset: 39 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined offset: 44 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined offset: 51 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined offset: 796 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined offset: 798 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined offset: 850 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined offset: 922 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined offset: 975 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined offset: 1102 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined offset: 1103 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined offset: 1104 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined offset: 1105 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined offset: 1106 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined offset: 1111 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined offset: 42 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:53:22 Asia/Dhaka] PHP Notice:  Undefined variable: add_button_bar in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 318
+[23-Dec-2025 04:53:23 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/jsslerp/public_html/jsslerp/assets/template/layout.top.php on line 3
+[23-Dec-2025 10:53:23 Asia/Dhaka] PHP Notice:  Undefined variable: unique in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/sr_loan_return_ajax.php on line 58
+[23-Dec-2025 10:53:23 Asia/Dhaka] PHP Notice:  Undefined variable:  in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/sr_loan_return_ajax.php on line 58
+[23-Dec-2025 10:53:23 Asia/Dhaka] PHP Notice:  Undefined variable: loan_date in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/sr_loan_return_ajax.php on line 85
+[23-Dec-2025 10:53:23 Asia/Dhaka] PHP Notice:  Undefined variable: loan_date in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/sr_loan_return_ajax.php on line 94
+[23-Dec-2025 10:53:23 Asia/Dhaka] PHP Notice:  Undefined variable: loan_date in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/sr_loan_return_ajax.php on line 94
+[23-Dec-2025 10:53:23 Asia/Dhaka] PHP Notice:  Undefined variable: paid_date in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/sr_loan_return_ajax.php on line 113
+[23-Dec-2025 10:53:23 Asia/Dhaka] PHP Notice:  Undefined variable: recdate in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/sr_loan_return_ajax.php on line 165
+[23-Dec-2025 10:53:23 Asia/Dhaka] PHP Notice:  Undefined variable: total_paid in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/sr_loan_return_ajax.php on line 174
+[23-Dec-2025 10:53:23 Asia/Dhaka] PHP Notice:  Undefined variable: total_days in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/sr_loan_return_ajax.php on line 184
+[23-Dec-2025 10:53:23 Asia/Dhaka] PHP Notice:  Undefined variable: interest_amt in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/sr_loan_return_ajax.php on line 193
+[23-Dec-2025 10:53:23 Asia/Dhaka] PHP Notice:  Undefined variable: total_amount in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/sr_loan_return_ajax.php on line 202
+[23-Dec-2025 10:53:23 Asia/Dhaka] PHP Notice:  Undefined variable: cash_ledger in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/sr_loan_return_ajax.php on line 216
+[23-Dec-2025 04:54:16 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/jsslerp/public_html/jsslerp/assets/template/layout.top.php on line 3
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined index: sr_loan_id in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 27
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: cc_code in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 80
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: r_from in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 80
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: bank in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 80
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: c_no in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 80
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: cheq_date in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 80
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: issue_from_ac in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 80
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: employee in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 80
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: remarks in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 80
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: cc_code in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 81
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: r_from in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 81
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: bank in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 81
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: c_no in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 81
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: cheq_date in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 81
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: issue_from_ac in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 81
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: employee in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 81
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: remarks in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 81
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: cc_code in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 84
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: r_from in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 84
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: bank in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 84
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: c_no in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 84
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: cheq_date in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 84
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: issue_to_ac in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 84
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: employee in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 84
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: remarks in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 84
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: cc_code in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 85
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: r_from in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 85
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: bank in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 85
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: c_no in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 85
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: cheq_date in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 85
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: issue_to_ac in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 85
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: employee in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 85
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: remarks in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 85
+[23-Dec-2025 04:54:16 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/jsslerp/public_html/jsslerp/assets/template/layout.top.php on line 3
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined index: sr_loan_id in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 27
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: booking_number in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 186
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: sr_all in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 186
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Trying to get property of non-object in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 186
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: booking_number_eng in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 189
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: dealer_code_eng in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 205
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: booking_number_eng in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 226
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: loan_date in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 231
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: paid_date in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 256
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: sr_all in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 266
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Trying to get property of non-object in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 266
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: sr_all in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 276
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Trying to get property of non-object in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 276
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: sr_all in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 285
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Trying to get property of non-object in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 285
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: totalPaid in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 298
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: recdate in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 308
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: total_paid in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 317
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: total_days in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 327
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: interest_amt in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 336
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: total_amount in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 345
+[23-Dec-2025 10:54:16 Asia/Dhaka] PHP Notice:  Undefined variable: cash_ledger in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 359
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Use of undefined constant mod_id - assumed 'mod_id' in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 2
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined index: mod_id in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 2
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Use of undefined constant PROJECTS - assumed 'PROJECTS' in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 12
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: header_add in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 19
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: sb_count in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined offset: 37 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined offset: 39 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined offset: 44 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined offset: 51 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined offset: 796 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined offset: 798 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined offset: 850 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined offset: 922 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined offset: 975 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined offset: 1102 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined offset: 1103 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined offset: 1104 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined offset: 1105 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined offset: 1106 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined offset: 1111 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined offset: 42 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: add_button_bar in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 318
+[23-Dec-2025 04:54:21 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/jsslerp/public_html/jsslerp/assets/template/layout.top.php on line 3
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined index: sr_loan_id in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 27
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: booking_number in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 186
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: sr_all in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 186
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Trying to get property of non-object in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 186
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: booking_number_eng in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 189
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: dealer_code_eng in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 205
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: booking_number_eng in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 226
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: loan_date in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 231
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: paid_date in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 256
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: sr_all in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 266
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Trying to get property of non-object in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 266
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: sr_all in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 276
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Trying to get property of non-object in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 276
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: sr_all in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 285
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Trying to get property of non-object in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 285
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: totalPaid in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 298
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: recdate in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 308
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: total_paid in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 317
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: total_days in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 327
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: interest_amt in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 336
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: total_amount in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 345
+[23-Dec-2025 10:54:21 Asia/Dhaka] PHP Notice:  Undefined variable: cash_ledger in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/return_loan.php on line 359
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Use of undefined constant mod_id - assumed 'mod_id' in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 2
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined index: mod_id in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 2
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Use of undefined constant PROJECTS - assumed 'PROJECTS' in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 12
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined variable: header_add in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 19
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined variable: sb_count in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined offset: 37 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined offset: 39 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined offset: 44 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined offset: 51 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined offset: 796 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined offset: 798 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined offset: 850 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined offset: 922 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined offset: 975 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined offset: 1102 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined offset: 1103 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined offset: 1104 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined offset: 1105 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined offset: 1106 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined offset: 1111 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined offset: 42 in /home/jsslerp/public_html/jsslerp/assets/template/main_layout_menu2.php on line 284
+[23-Dec-2025 10:54:26 Asia/Dhaka] PHP Notice:  Undefined variable: add_button_bar in /home/jsslerp/public_html/jsslerp/assets/template/inc.main_layout.php on line 318
+[23-Dec-2025 10:54:33 Asia/Dhaka] PHP Notice:  Undefined offset: 1 in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/view_loan.php on line 378
+[23-Dec-2025 10:54:33 Asia/Dhaka] PHP Notice:  Undefined offset: 1 in /home/jsslerp/public_html/jsslerp/warehouse_mod/pages/dealer/view_loan.php on line 470

@@ -1,0 +1,411 @@
+<? $cid1 = explode('.', $_SERVER['HTTP_HOST'])[0];?>
+
+<!doctype html>
+
+<html lang="en">
+
+<?
+
+$u_id= $_SESSION['user_id']; //$_SESSION['user']['id'];
+
+if($_SESSION['user_id'] >0){  }else{ echo '<script>location.href="logout.php";</script>'; }
+
+$PBI_ID = find_a_field('user_activity_management','PBI_ID','user_id='.$u_id);
+
+?>
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta name="description" content="">
+
+<meta name="author" content="">
+
+<meta name="generator" content="">
+
+<title>Attendance Management
+
+<?=$ms;?>
+
+</title>
+
+<!-- manifest meta -->
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--<link rel="manifest" href="manifest.json" />-->
+
+<!-- Favicons -->
+
+<link rel="icon" type="image/x-icon" href="assets/favicon/erp_favicon-32x32.png"> 
+
+<!-- Google fonts-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- bootstrap icons -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+<!-- nouislider CSS -->
+
+<link href="assets/vendor/nouislider/nouislider.min.css" rel="stylesheet">
+
+<!-- date rage picker -->
+
+<link rel="stylesheet" href="assets/vendor/daterangepicker/daterangepicker.css">
+
+<!-- swiper carousel css -->
+
+<link rel="stylesheet" href="assets/vendor/swiperjs-6.6.2/swiper-bundle.min.css">
+
+<!-- style css for this template -->
+
+<link href="assets/scss/custom.css?version=1.0.1.7" rel="stylesheet" id="style">
+
+<link href="assets/scss/style.css" rel="stylesheet" id="style">
+
+</head>
+
+<body class="body-scroll theme-pink" data-page="shop">
+
+<!-- Sidebar main menu -->
+
+<div class="sidebar-wrap  sidebar-overlay">
+
+<!-- Add pushcontent or fullmenu instead overlay -->
+
+<div class="closemenu text-secondary">Close Menu</div>
+
+<div class="sidebar ">
+
+<!-- user information -->
+
+<div class="row">
+
+<div class="col-12 profile-sidebar">
+
+<div class="row">
+
+<div class="col-auto">
+
+<? 
+
+//$sql =  @mysql_query("select PBI_NAME,PBI_PICTURE_ATT_PATH,DEPT_ID,DESG_ID,PBI_NID_ATT_PATH from  personnel_basic_info where PBI_ID = ".$PBI_ID ."");
+
+//$row = @mysql_fetch_object($sql);
+
+$image_path = find_a_field('personnel_basic_info','PBI_PICTURE_ATT_PATH','PBI_ID="'.$PBI_ID.'"');
+
+if($image_path!==""){ 
+
+?>
+
+<figure class="avatar avatar-100 rounded-15 shadow-sm">
+
+<img src="../../../assets/support/upload_view.php?name=<?=$image_path?>&folder=hrm_emp_pic&proj_id=<?=$cid1?>&mod=hrm_mod" alt="#" style=" width: 100%; height: 100%; ">   
+
+</figure>
+
+<? }else{?>
+
+<figure class="avatar avatar-100 rounded-15 shadow-sm"> <img src="assets/img/user1.png" alt="" style=" width: 100%; height: 100%; "> </figure>
+
+<? }?>
+
+</div>
+
+<div class="col px-0 align-self-center">
+
+<p class="mb-2" style="font-size:13px"><?=find_a_field('user_activity_management','concat(fname," - ",PBI_ID)','PBI_ID='.$PBI_ID);?></p>
+
+<p class="text-muted size-12"> <?=find_a_field('personnel_basic_info','PBI_DESIGNATION','PBI_ID="'.$PBI_ID.'"');?><br />
+
+<?php /*?>Dep: <?=find_a_field('personnel_basic_info','PBI_DEPARTMENT','PBI_ID="'.$PBI_ID.'"');?><?php */?></p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- user emnu navigation -->
+
+<div class="row">
+
+<div class="col-12">
+
+<ul class="nav nav-pills">
+
+<li class="nav-item"> <a class="nav-link active" aria-current="page" href="home.php">
+
+<div class="avatar avatar-40 icon"><i class="bi bi-speedometer2"></i></div>
+
+<div class="col">Dashboard</div>
+
+<div class="arrow"><i class="bi bi-chevron-right"></i></div>
+
+</a> </li>
+
+<!-- SETUP -->
+
+<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+
+<div class="avatar avatar-40 icon"><i class="bi bi-person-bounding-box"></i></div>
+
+<div class="col">Attendance</div>
+
+<div class="arrow"><i class="bi bi-chevron-down plus"></i><i class="bi bi-chevron-up minus"></i> </div>
+
+</a>
+
+<ul class="dropdown-menu">
+
+<li> <a class="dropdown-item nav-link" href="daily_attendance2.php">
+
+<div class="avatar avatar-40 icon"><i class="bi bi-plus-lg"></i></div>
+
+<div class="col align-self-center">Daily Attendance</div>
+
+<div class="arrow"><i class="bi bi-chevron-right"></i></div>
+
+</a> </li>
+
+<li> <a class="dropdown-item nav-link" href="attendance.php">
+
+<div class="avatar avatar-40 icon"><i class="bi bi-person-bounding-box"></i></div>
+
+<div class="col align-self-center">Daily Attendance (Pic)</div>
+
+<div class="arrow"><i class="bi bi-chevron-right"></i></div>
+
+</a> </li>
+
+
+<li> <a class="dropdown-item nav-link" href="att_report.php">
+
+<div class="avatar avatar-40 icon"><i class="bi bi-card-checklist"></i></div>
+
+<div class="col align-self-center">Punch Status</div>
+
+<div class="arrow"><i class="bi bi-chevron-right"></i></div>
+
+</a> </li>
+
+<li> <a class="dropdown-item nav-link" href="att_location_report.php">
+
+<div class="avatar avatar-40 icon"><i class="bi bi-receipt"></i></div>
+
+<div class="col align-self-center">Attendance Report</div>
+
+<div class="arrow"><i class="bi bi-chevron-right"></i></div>
+
+</a> </li>
+
+</ul>
+
+</li>
+
+<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+
+<div class="avatar avatar-40 icon"><i class="bi bi-person-lines-fill"></i></div>
+
+<div class="col">Leave & IOM</div>
+
+<div class="arrow"><i class="bi bi-chevron-down plus"></i><i class="bi bi-chevron-up minus"></i> </div>
+
+</a>
+
+<ul class="dropdown-menu">
+
+<li> <a class="dropdown-item nav-link" href="leave.php">
+
+<div class="avatar avatar-40 icon"><i class="bi bi-plus-lg"></i></div>
+
+<div class="col align-self-center">Leave Entry</div>
+
+<div class="arrow"><i class="bi bi-chevron-right"></i></div>
+
+</a> </li>
+
+<li> <a class="dropdown-item nav-link" href="short_leave.php">
+
+<div class="avatar avatar-40 icon"><i class="bi bi-list-check"></i></div>
+
+<div class="col align-self-center">Half Day Leave</div>
+
+<div class="arrow"><i class="bi bi-chevron-right"></i></div>
+
+</a> </li>
+
+<li> <a class="dropdown-item nav-link" href="iom_entry.php">
+
+<div class="avatar avatar-40 icon"><i class="bi bi-plus-lg"></i></div>
+
+<div class="col align-self-center">IOM Entry</div>
+
+<div class="arrow"><i class="bi bi-chevron-right"></i></div>
+
+</a> </li>
+
+</ul>
+
+</li>
+
+<!--Reports-->
+
+<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+
+<div class="avatar avatar-40 icon"><i class="bi bi-window-dock"></i></div>
+
+<div class="col">Leave & Iom Status</div>
+
+<div class="arrow"><i class="bi bi-chevron-down plus"></i><i class="bi bi-chevron-up minus"></i> </div>
+
+</a>
+
+<ul class="dropdown-menu">
+
+<li> <a class="dropdown-item nav-link" href="leave_status.php">
+
+<div class="avatar avatar-40 icon"><i class="bi bi-card-checklist"></i></div>
+
+<div class="col align-self-center">Leave Status</div>
+
+<div class="arrow"><i class="bi bi-chevron-right"></i></div>
+
+</a> </li>
+
+<li> <a class="dropdown-item nav-link" href="iom_status.php">
+
+<div class="avatar avatar-40 icon"><i class="bi bi-card-checklist"></i></div>
+
+<div class="col align-self-center">Iom Status</div>
+
+<div class="arrow"><i class="bi bi-chevron-right"></i></div>
+
+</a> </li>
+
+</ul>
+
+</li>
+
+
+
+
+
+
+<li class="nav-item"> <a class="nav-link" href="logout.php" tabindex="-1">
+
+<div class="avatar avatar-40 icon"><i class="bi bi-box-arrow-right"></i></div>
+
+<div class="col">Logout</div>
+</a> 
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Sidebar main menu ends -->
+
+<!-- Begin page -->
+
+<main class="h-100">
+
+<!-- Header -->
+
+<header class="header position-fixed header-filled" style=" padding: 5px 10px 5px 20px; ">
+
+<div class="row">
+
+<div class="col-auto" style="display:none;">
+
+<button type="button" class="btn btn-light btn-44 btn-rounded menu-btn"> <i class="bi bi-list"></i> </button>
+
+</div>
+
+<div class="col" style="padding-left: 0px;">
+
+<div class="logo-small">
+	<a data-id="model" data-target="#mymodel">
+		<? 
+		//$sql =  @mysql_query("select PBI_NAME,PBI_PICTURE_ATT_PATH,DEPT_ID,DESG_ID,PBI_NID_ATT_PATH from  personnel_basic_info where PBI_ID = ".$PBI_ID ."");
+		//$row = @mysql_fetch_object($sql);
+		$image_path = find_a_field('personnel_basic_info','PBI_PICTURE_ATT_PATH','PBI_ID="'.$PBI_ID.'"');
+		if($image_path!==""){ 
+		?>
+		<img src="../../../assets/support/upload_view.php?name=<?=$image_path?>&folder=hrm_emp_pic&proj_id=<?=$cid1?>&mod=hrm_mod" alt="#" style=" width: 40px; height:40px; border-radius: 50%;">   
+		<? }else{?>
+		
+		<img src="assets/img/user1.png" alt="" style=" width: 40px; height:40px; border-radius: 50%;"> 
+		
+		<? }?>
+	</a>
+</div>
+
+</div>
+
+<div class="col-auto">
+<div class="logo-small">
+<img src="../../logo/<?=$cid1?>.png" alt="" />
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- Header ends -->
+
+
+
+<div id="mymodel" class="model">
+  <div class="model-content" style=" position: fixed; overflow: scroll;">
+        <div class="modal-header">
+    		<span class="close" data-close="model" style=" font-size: 32px !important; position: fixed; margin-top: 30px; ">&times;</span>
+    	</div>
+        <div class="modal-body p-0">
+		<p align="center">
+				<? 
+		//$sql =  @mysql_query("select PBI_NAME,PBI_PICTURE_ATT_PATH,DEPT_ID,DESG_ID,PBI_NID_ATT_PATH from  personnel_basic_info where PBI_ID = ".$PBI_ID ."");
+		//$row = @mysql_fetch_object($sql);
+		$image_path = find_a_field('personnel_basic_info','PBI_PICTURE_ATT_PATH','PBI_ID="'.$PBI_ID.'"');
+		if($image_path!==""){ 
+		?>
+		<img src="../../../assets/support/upload_view.php?name=<?=$image_path?>&folder=hrm_emp_pic&proj_id=<?=$cid1?>&mod=hrm_mod" alt="#" style=" width: 50%;">   
+		<? }else{?>
+		
+		<img src="assets/img/user1.png" alt="" style=" width: 100%;"> 
+		
+		<? }?>
+		
+		</p>
+		
+		<div class="row">
+		
+		
+		
+		
+		</div>
+		
+		
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,234 @@
+[23-Dec-2025 10:49:39 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 10:49:39 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 10:49:39 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 10:49:39 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 10:49:39 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 10:49:39 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 10:49:39 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 10:49:39 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 10:49:39 Asia/Dhaka] PHP Notice:  Undefined index: access_id in /home/jsslerp/controller/jssl/controller/tools/inc.log.php on line 14
+[23-Dec-2025 10:49:39 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 05:18:47 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 11:18:48 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:18:48 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:18:48 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:18:48 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:18:48 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:18:48 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:18:48 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:18:48 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:18:48 Asia/Dhaka] PHP Notice:  Undefined index: access_id in /home/jsslerp/controller/jssl/controller/tools/inc.log.php on line 14
+[23-Dec-2025 11:18:48 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 05:27:41 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 11:27:43 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:27:43 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:27:43 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:27:43 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:27:43 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:27:43 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:27:43 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:27:43 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:27:43 Asia/Dhaka] PHP Notice:  Undefined index: access_id in /home/jsslerp/controller/jssl/controller/tools/inc.log.php on line 14
+[23-Dec-2025 11:27:43 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 05:28:34 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 11:28:39 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:28:39 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:28:39 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:28:39 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:28:39 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:28:39 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:28:39 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:28:39 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:28:39 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 05:41:18 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 11:41:24 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:41:24 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:41:24 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:41:24 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:41:24 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:41:24 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:41:24 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:41:24 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:41:24 Asia/Dhaka] PHP Notice:  Undefined index: access_id in /home/jsslerp/controller/jssl/controller/tools/inc.log.php on line 14
+[23-Dec-2025 11:41:24 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 05:50:35 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 05:50:35 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 05:52:40 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 05:52:41 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 11:52:45 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:52:45 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:52:45 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:52:45 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:52:45 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:52:45 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:52:45 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:52:45 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 11:52:45 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 06:13:58 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 06:22:44 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 12:22:46 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:22:46 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:22:46 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:22:46 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:22:46 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:22:46 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:22:46 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:22:46 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:22:46 Asia/Dhaka] PHP Notice:  Undefined index: access_id in /home/jsslerp/controller/jssl/controller/tools/inc.log.php on line 14
+[23-Dec-2025 12:22:46 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 06:23:33 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 12:23:36 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:23:36 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:23:36 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:23:36 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:23:36 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:23:36 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:23:36 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:23:36 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:23:36 Asia/Dhaka] PHP Notice:  Undefined index: access_id in /home/jsslerp/controller/jssl/controller/tools/inc.log.php on line 14
+[23-Dec-2025 12:23:36 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 12:23:45 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 06:26:29 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 12:26:33 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:26:33 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:26:33 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:26:33 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:26:33 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:26:33 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:26:33 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:26:33 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 12:26:33 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 06:40:14 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 07:05:26 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 13:05:38 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:05:38 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:05:38 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:05:38 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:05:38 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:05:38 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:05:38 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:05:38 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:05:38 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 07:07:56 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 13:08:03 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:08:03 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:08:03 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:08:03 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:08:03 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:08:03 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:08:03 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:08:03 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:08:03 Asia/Dhaka] PHP Notice:  Undefined index: access_id in /home/jsslerp/controller/jssl/controller/tools/inc.log.php on line 14
+[23-Dec-2025 13:08:03 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 07:08:12 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 13:08:15 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:08:15 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:08:15 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:08:15 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:08:15 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:08:15 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:08:15 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:08:15 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:08:15 Asia/Dhaka] PHP Notice:  Undefined index: access_id in /home/jsslerp/controller/jssl/controller/tools/inc.log.php on line 14
+[23-Dec-2025 13:08:15 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 07:12:06 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 13:12:10 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:12:10 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:12:10 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:12:10 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:12:10 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:12:10 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:12:10 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:12:10 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 13:12:10 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 07:17:18 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 14:02:50 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 14:02:50 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 14:02:50 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 14:02:50 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 14:02:50 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 14:02:50 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 14:02:50 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 14:02:50 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 14:02:50 Asia/Dhaka] PHP Notice:  Undefined index: access_id in /home/jsslerp/controller/jssl/controller/tools/inc.log.php on line 14
+[23-Dec-2025 14:02:50 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 09:04:13 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 15:04:18 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:04:18 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:04:18 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:04:18 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:04:18 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:04:18 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:04:18 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:04:18 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:04:18 Asia/Dhaka] PHP Notice:  Undefined index: access_id in /home/jsslerp/controller/jssl/controller/tools/inc.log.php on line 14
+[23-Dec-2025 15:04:19 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 09:12:21 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 15:12:22 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:12:22 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:12:22 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:12:22 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:12:22 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:12:22 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:12:22 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:12:22 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:12:22 Asia/Dhaka] PHP Notice:  Undefined index: access_id in /home/jsslerp/controller/jssl/controller/tools/inc.log.php on line 14
+[23-Dec-2025 15:12:23 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 09:28:40 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 15:28:43 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:28:43 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:28:43 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:28:43 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:28:43 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:28:43 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:28:43 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:28:43 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:28:43 Asia/Dhaka] PHP Notice:  Undefined index: access_id in /home/jsslerp/controller/jssl/controller/tools/inc.log.php on line 14
+[23-Dec-2025 15:28:43 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 09:40:11 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 15:40:15 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:40:15 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:40:15 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:40:15 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:40:15 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:40:15 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:40:15 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:40:15 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 15:40:15 Asia/Dhaka] PHP Notice:  Undefined index: access_id in /home/jsslerp/controller/jssl/controller/tools/inc.log.php on line 14
+[23-Dec-2025 15:40:15 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 11:01:07 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 17:01:10 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 17:01:10 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 17:01:10 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 17:01:10 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 17:01:10 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 17:01:10 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 17:01:10 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 17:01:10 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 17:01:10 Asia/Dhaka] PHP Notice:  Undefined index: access_id in /home/jsslerp/controller/jssl/controller/tools/inc.log.php on line 14
+[23-Dec-2025 17:01:10 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 11:58:53 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 12:20:51 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 12:20:55 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 12:44:44 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 18:44:45 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 18:44:45 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 18:44:45 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 18:44:45 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 18:44:45 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 18:44:45 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 18:44:45 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 18:44:45 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 18:44:45 Asia/Dhaka] PHP Notice:  Undefined index: access_id in /home/jsslerp/controller/jssl/controller/tools/inc.log.php on line 14
+[23-Dec-2025 18:44:45 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
+[23-Dec-2025 16:18:46 UTC] PHP Notice:  Undefined variable: module_name in /home/jsslerp/public_html/jsslerp/assets/template/login_interface.php on line 12
+[23-Dec-2025 22:18:52 Asia/Dhaka] PHP Notice:  Undefined variable: module_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 22:18:52 Asia/Dhaka] PHP Notice:  Undefined variable: page_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 22:18:52 Asia/Dhaka] PHP Notice:  Undefined variable: page_name in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 22:18:52 Asia/Dhaka] PHP Notice:  Undefined variable: tr_from in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 22:18:52 Asia/Dhaka] PHP Notice:  Undefined variable: tr_no in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 22:18:52 Asia/Dhaka] PHP Notice:  Undefined variable: tr_id in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 22:18:52 Asia/Dhaka] PHP Notice:  Undefined variable: tr_type in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 22:18:52 Asia/Dhaka] PHP Notice:  Undefined variable: execution_time in /home/jsslerp/controller/jssl/controller/configure/check_login.php on line 96
+[23-Dec-2025 22:18:52 Asia/Dhaka] PHP Notice:  Undefined index: access_id in /home/jsslerp/controller/jssl/controller/tools/inc.log.php on line 14
+[23-Dec-2025 22:18:52 Asia/Dhaka] PHP Notice:  Use of undefined constant php - assumed 'php' in /home/jsslerp/public_html/jsslerp/login/pages/main/home.php on line 327
