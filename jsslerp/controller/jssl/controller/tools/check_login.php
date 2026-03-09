@@ -1,4 +1,4 @@
-<?	
+<?php	
 function check_for_login($cid,$uid,$passward,$type){
 
 if($type==1){

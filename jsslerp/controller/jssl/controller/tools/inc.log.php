@@ -1,4 +1,4 @@
-<?
+<?php
 function activity_log($module_id,$page_id,$page_name,$tr_from,$tr_no,$tr_id,$tr_type,$execution_time)
 {
 $ipaddress = get_client_ip();

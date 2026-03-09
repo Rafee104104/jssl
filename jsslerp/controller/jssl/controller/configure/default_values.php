@@ -1,4 +1,4 @@
-<?	
+<?php	
 // FOR DATABASE
     define('DB_SERVER','localhost');
 

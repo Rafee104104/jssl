@@ -1,4 +1,4 @@
-<?	
+<?php	
 
 	define('SERVER_ENGINE','../../../../../controller/jssl/controller/');
 function check_for_login($cid,$uid,$passward,$type){
