@@ -1,0 +1,74 @@
+<?php
+
+define('SERVER_ENGINE','../../../../../controller/jssl/controller/');
+
+function check_for_login($cid,$uid,$password,$type){
+
+    require_once(SERVER_ENGINE.'configure/db_connect_acc_main.php');
+    require_once(SERVER_ENGINE.'tools/inc.log.php');
+    require_once(SERVER_ENGINE.'tools/inc.database.php');
+
+    $today = date('Y-m-d');
+
+    $sql = "SELECT b.db_user,b.db_pass,b.db_name,a.cid,a.id,a.company_name,a.address 
+            FROM company_info a,database_info b 
+            WHERE a.cid='$cid' 
+            AND a.id=b.company_id 
+            AND a.status='ON' 
+            AND register_date>'$today' 
+            LIMIT 1";
+
+    $result = mysql_query($sql);
+
+    if(!$result){
+        return false;
+    }
+
+    if($proj = mysql_fetch_object($result)){
+
+        $_SESSION['proj_id'] = $proj->cid;
+        $_SESSION['db_name'] = $proj->db_name;
+        $_SESSION['db_user'] = $proj->db_user;
+        $_SESSION['db_pass'] = $proj->db_pass;
+
+        require_once(SERVER_ENGINE.'configure/db_connect.php');
+
+        $user_sql = "SELECT * 
+                     FROM user_activity_management 
+                     WHERE username='$uid' 
+                     AND expire_date >= '$today'";
+
+        $info = find_all_field_sql($user_sql);
+
+        if($info && $info->password == $password){
+
+            $_SESSION['user']['level']       = $info->level;
+            $_SESSION['user']['id']          = $info->user_id;
+            $_SESSION['user']['fname']       = $info->fname;
+            $_SESSION['user']['designation'] = $info->designation;
+            $_SESSION['user']['depot']       = $info->warehouse_id;
+            $_SESSION['user']['group']       = $info->group_for;
+            $_SESSION['user']['username']    = $uid;
+
+            $_SESSION['mhafuz'] = 'Active';
+
+            $_SESSION['company_name'] = $_SESSION['proj_name'] =
+                find_a_field('user_group','group_name','id='.$info->group_for);
+
+            $_SESSION['company_address'] = $proj->address;
+
+            // activity log optional
+            if(function_exists('activity_log')){
+                $_SESSION['user']['access_id'] =
+                    activity_log('', '', '', '', '', '', '', '');
+            }
+
+            return true;
+        }
+
+        return false;
+    }
+
+    return false;
+}
+?>

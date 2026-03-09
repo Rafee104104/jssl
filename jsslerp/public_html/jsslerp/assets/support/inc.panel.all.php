@@ -1,4 +1,4 @@
-<?
+<?php
 define('SERVER_ENGINE','../../../../../../erpengine/controller/MainEngine/controller/');
 require_once SERVER_ENGINE."tools/check.php";
 require_once SERVER_ENGINE."configure/db_connect.php";

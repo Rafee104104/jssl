@@ -1,4 +1,4 @@
-<? session_start();
+<?php session_start();
 require_once "../../../assets/support/inc.all.php";
  $cid = explode('.', $_SERVER['HTTP_HOST'])[0];
 ?>

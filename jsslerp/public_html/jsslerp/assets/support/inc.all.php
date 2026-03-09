@@ -1,4 +1,4 @@
-<?
+<?php
 
 require_once "../../../assets/support/default_values.php";
 
