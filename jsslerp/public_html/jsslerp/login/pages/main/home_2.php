@@ -1,7 +1,12 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
 <?php session_start();
 require_once "../../../assets/support/inc.all.php";
  $cid = explode('.', $_SERVER['HTTP_HOST'])[0];
 ?>
+
 <!DOCTYPE html>
 
 <html class="no-js no-touch no-touch">

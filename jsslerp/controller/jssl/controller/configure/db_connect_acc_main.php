@@ -1,40 +1,18 @@
 <?php
+require_once __DIR__ . '/mysql_compat.php';
 
 $host = "localhost";
 $user = "root";
 $pass = "";
 $db   = "jsslerp";
 
-$GLOBALS['conn'] = mysqli_connect($host,$user,$pass,$db);
+$GLOBALS['conn'] = mysqli_connect($host, $user, $pass, $db);
 
-if(!$GLOBALS['conn']){
+if (!$GLOBALS['conn']) {
     die("Database Connection Failed: " . mysqli_connect_error());
 }
 
-/* mysql compatibility wrapper */
-
-function mysql_query($query){
-    return mysqli_query($GLOBALS['conn'], $query);
-}
-
-function mysql_fetch_object($result){
-    return mysqli_fetch_object($result);
-}
-
-function mysql_fetch_array($result){
-    return mysqli_fetch_array($result);
-}
-
-function mysql_num_rows($result){
-    return mysqli_num_rows($result);
-}
-
-function mysql_insert_id(){
-    return mysqli_insert_id($GLOBALS['conn']);
-}
-
-function mysql_real_escape_string($string){
-    return mysqli_real_escape_string($GLOBALS['conn'],$string);
-}
+/* Optional: set charset */
+mysqli_set_charset($GLOBALS['conn'], "utf8");
 
 ?>
